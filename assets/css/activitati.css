@@ -348,3 +348,142 @@ li {
     float: left;
     margin-right: 51px;
 }
+
+
+/* Stiluri generale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stiluri pentru meniul de navigație */
+.main-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.main-menu li {
+    padding: 10px 15px;
+}
+
+.main-menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Stiluri pentru imagini */
+#aside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.foto,
+.foto1,
+.foto2,
+.foto3 {
+    width: 45%;
+}
+
+/* MEDIA QUERIES */
+
+/* 📱 Telefoane (max-width: 768px) */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #logo img {
+        width: 80px;
+    }
+
+    .main-menu {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .main-menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #aside {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto,
+    .foto1,
+    .foto2,
+    .foto3 {
+        width: 90%;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* 📲 Tablete (min-width: 769px) și (max-width: 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #header {
+        padding: 10px;
+    }
+
+    .main-menu li {
+        font-size: 16px;
+    }
+
+    #section {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 16px;
+    }
+
+    #aside {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .foto,
+    .foto1,
+    .foto2,
+    .foto3 {
+        width: 100%;
+    }
+}
+
+/* 💻 Desktopuri (min-width: 1025px) */
+@media (min-width: 1025px) {
+    #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-menu {
+        display: flex;
+        gap: 20px;
+    }
+
+    #aside {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}

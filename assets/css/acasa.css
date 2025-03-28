@@ -469,3 +469,106 @@ iframe {
 #footer{
     margin: 10px 0px 113px 0px;
 }
+
+
+
+
+/* Stiluri implicite pentru desktop (min-width: 1024px) */
+
+/* Tablete */
+@media (max-width: 1024px) {
+    #header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #logo img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    #nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text,
+    .mid_text1,
+    .mid_text2 {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .img_right img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Telefoane mobile */
+@media (max-width: 768px) {
+
+    h1,
+    h2 {
+        font-size: 1.5em;
+    }
+
+    #header {
+        padding: 10px;
+    }
+
+    #nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-menu li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .text p,
+    .mid_text1 p,
+    .mid_text2 p {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    #imagine_coperta img,
+    .mid img,
+    .img_right img {
+        width: 100%;
+        height: auto;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Telefoane foarte mici */
+@media (max-width: 480px) {
+
+    h1,
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .text,
+    .mid_text1,
+    .mid_text2 {
+        padding: 5px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .links a {
+        font-size: 1.5em;
+    }
+}

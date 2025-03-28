@@ -462,3 +462,53 @@ a[href^="https://www.princess-hotels.com"] {
     text-decoration: none;
     color: #9f6a1c
 }
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 1024px) {
+    #nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header h1 {
+        font-size: 1.5rem;
+    }
+
+    .main_img img {
+        width: 100%;
+    }
+
+    #nav ul {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #header {
+        padding: 10px;
+    }
+
+    #nav ul {
+        padding: 0;
+    }
+
+    #nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #main {
+        padding: 10px;
+    }
+
+    #footer {
+        padding: 10px;
+    }
+}
